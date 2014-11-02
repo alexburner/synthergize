@@ -17,10 +17,10 @@ module.exports = function (app, passport, express) {
 	var router = express.Router();
 
 	// -------------------------
-	// SPLASH 
+	// WELCOME 
 	// -------------------------
 	router.get('/welcome', function (req, res) {
-		res.render('splash.ejs'); // load the index.ejs file
+		res.render('welcome.ejs'); // load the index.ejs file
 	});
 
 	// -------------------------
@@ -98,7 +98,7 @@ module.exports = function (app, passport, express) {
 	});
 
 	// -------------------------
-	// ADD ROUTER TO MIDDLEWARE
+	// ADD ROUTER TO EXPRESS
 	// -------------------------
 	app.use('/', router);
 

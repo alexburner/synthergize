@@ -1,7 +1,8 @@
 // config/database.js
 module.exports = {
 
-	// looks like mongodb://<user>:<pass>@mongo.onmodulus.net:27017/Mikha4ot
+	// gotta start mongo! on my computer its:
+	// $ mongod --dbpath ~/data/db
 	'url' : 'mongodb://127.0.0.1/synthergizedb' 
 
 };
