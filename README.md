@@ -7,5 +7,5 @@ blending scotch.io's Easy Node Auth 1 and MEAN Stack SPA
 
 Potgres  
   
-Add a user  
+Add a user  name "root" password "root"
 http://postgresguide.com/setup/users.html
