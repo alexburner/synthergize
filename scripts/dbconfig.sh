@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## ADD ROOT USER, CREATE SYNTHERGIZEDB DATABASE, GRANT ALL PRIVILEGES
+psql -h localhost << EOF
+CREATE USER root WITH PASSWORD 'root';
+CREATE DATABASE synthergizedb;
+GRANT ALL PRIVILEGES ON DATABASE synthergizedb to root;
+EOF
