@@ -9,4 +9,5 @@ Need MongoDB installed & running locally (see MEAN tutorial)
   
 Postgres  
 Add a user  name "root" password "root"  
+Create database named "synthergizedb"  
 http://postgresguide.com/setup/users.html
