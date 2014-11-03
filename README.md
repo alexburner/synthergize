@@ -11,3 +11,7 @@ Postgres
 Add a user  name "root" password "root"  
 Create database named "synthergizedb"  
 http://postgresguide.com/setup/users.html
+
+this can be accomplished by running
+```
+./scripts/dbconfig.sh
