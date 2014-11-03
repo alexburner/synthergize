@@ -9,3 +9,10 @@ Potgres
   
 Add a user  name "root" password "root"
 http://postgresguide.com/setup/users.html
+
+Needs:
+=====
+* Sequelize controls schema: bad!
+* Passport config is weird
+* Config in general is weird
+* Need config envs: dev, test, prod
