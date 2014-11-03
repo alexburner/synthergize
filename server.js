@@ -2,8 +2,6 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 8080;
-var mongoose = require('mongoose');
-var Sequelize = require('sequelize');
 var passport = require('passport');
 var flash = require('connect-flash');
 
@@ -12,16 +10,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-var configDB = require('./config/database.js');
-
 // configuration =================================================
 
-mongoose.connect(configDB.url);
-
-// get configured instance of sequelize
-var sequelize = require('./config/sequelize')(Sequelize);
-
-// pass passport for configuration
+// SO WEIRD pass passport for configuration
 require('./config/passport')(passport);
 
 

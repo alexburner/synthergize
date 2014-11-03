@@ -6,7 +6,6 @@
     "ejs" : "~0.8.5",
     "pg" : "3.6.2",	
     "sequelize" : "1.7.10", 
-    "mongoose" : "~3.8.1", 		
     "passport" : "~0.1.17", 		
     "passport-local" : "~0.1.6", 	
     "passport-facebook" : "~1.0.2", 
