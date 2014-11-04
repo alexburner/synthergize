@@ -25,6 +25,14 @@ Install PostgreSQL
 
 **Local**
 
+Setup PostreSQL
+- Follow instructions at http://postgresguide.com/setup/users.html
+  - Add a user name "root" password "root"
+  - Create database named "synthergizedb"
+  - Hook user up with database
+- OR just run this script `./scripts/dbconfig.sh`
+
+
 Clone git repo, setup db, install node/bower packages
 ```
 $ git clone https://github.com/alexburner/synthergize.git
