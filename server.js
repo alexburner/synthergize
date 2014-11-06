@@ -40,7 +40,7 @@ app.use(flash()); // use connect-flash for flash
 // routes =================================================
 
 // set the static files location (ex: /public/img will be /img for users)
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/client'));
 
 // load our routes and pass in our app and configured passport
 require('./app/routes.js')(app, passport, express);

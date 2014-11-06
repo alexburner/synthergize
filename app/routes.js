@@ -30,7 +30,7 @@ module.exports = function (app, passport, express) {
 	// show the login form
 	router.get('/login', function (req, res) {
 		// render the page and pass in any flash data if it exists
-		res.render('login.ejs', { 
+		res.render('UserAuth/login.ejs', { 
 			message: req.flash('loginMessage') 
 		});
 	});
@@ -49,7 +49,7 @@ module.exports = function (app, passport, express) {
 	// show the signup form
 	router.get('/signup', function (req, res) {
 		// render the page and pass in any flash data if it exists
-		res.render('signup.ejs', { 
+		res.render('UserAuth/signup.ejs', { 
 			message: req.flash('signupMessage') 
 		});
 	});
@@ -92,9 +92,10 @@ module.exports = function (app, passport, express) {
 	
 	// protected, catch all
 	// if route is not explicitly handled, we assume its for angular
+	// ***We will handle all HTML through EJS files***
 	router.get('*', isLoggedIn, function (req, res) {
 		// load our angular index
-		res.sendfile('./public/views/index.html');
+		res.render('UserProfile/index.ejs');
 	});
 
 	// -------------------------
