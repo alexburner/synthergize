@@ -87,6 +87,18 @@ module.exports = function (app, passport, express) {
 	});
 
 	// -------------------------
+	// API
+	// -------------------------
+	
+	// if route is not explicitly handled, we assume its for angular
+	router.get('/api/user-current', isLoggedIn, function (req, res) {
+		// return user object from session
+		var user = req.user;
+		user.password = undefined;
+		res.json(user);
+	});
+
+	// -------------------------
 	// ANGULAR
 	// -------------------------
 	
