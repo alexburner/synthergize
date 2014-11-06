@@ -9,11 +9,12 @@ blending scotch.io's Easy Node Auth 1 and MEAN Stack SPA
 
 **Prerequisites**
 
-Install Homebrew, Node.js, Bower
+Install Homebrew, Node.js, Bower, Nodemon
 ```
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew install node
 $ npm install -g bower
+$ npm install -g nodemon
 ```
 
 Install PostgreSQL 
@@ -41,6 +42,15 @@ $ ./scripts/dbconfig.sh
 $ npm install
 $ bower install
 ```
+
+### Run
+
+From project folder
+```
+$ nodemon server.js
+```
+
+
 
 Needs:
 =====
