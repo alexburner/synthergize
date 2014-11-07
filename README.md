@@ -36,13 +36,13 @@ $ bower install
 ```
 
 Setup PostgreSQL
+- If you have a pre-existing PostgreSQL database named "learntogether" run the tear down script first `./scripts/dbteardown.sh`, then run the build script: `./scripts/dbconfig.sh`
 - Follow instructions at http://postgresguide.com/setup/users.html
   - Add a user name "root" password "root"
   - Create database named "learntogether"
-  - Hook user up with database
 
-- If you have a pre-existing PostgreSQL database named "learntogether" run the tear down script first `./scripts/dbteardown.sh`, then run the build script: `./scripts/dbconfig.sh`
--
+
+
 ### Run
 
 From project folder
