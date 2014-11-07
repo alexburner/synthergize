@@ -26,14 +26,6 @@ Install PostgreSQL
 
 **Local**
 
-Setup PostgreSQL
-- Follow instructions at http://postgresguide.com/setup/users.html
-  - Add a user name "root" password "root"
-  - Create database named "learntogether"
-  - Hook user up with database
-
-- If you have a pre-existing PostgreSQL database named "learntogether" run the tear down script first `./scripts/dbteardown.sh`, then run the build script: `./scripts/dbconfig.sh`
-
 Clone git repo, setup db, install node/bower packages
 ```
 $ git clone https://github.com/alexburner/synthergize.git
@@ -43,6 +35,14 @@ $ npm install
 $ bower install
 ```
 
+Setup PostgreSQL
+- Follow instructions at http://postgresguide.com/setup/users.html
+  - Add a user name "root" password "root"
+  - Create database named "learntogether"
+  - Hook user up with database
+
+- If you have a pre-existing PostgreSQL database named "learntogether" run the tear down script first `./scripts/dbteardown.sh`, then run the build script: `./scripts/dbconfig.sh`
+-
 ### Run
 
 From project folder
