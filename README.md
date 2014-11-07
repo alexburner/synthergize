@@ -1,7 +1,7 @@
-synthergize
+Synthergize
 ===========
 
-blending scotch.io's Easy Node Auth 1 and MEAN Stack SPA
+Blending scotch.io's Easy Node Auth 1 and MEAN Stack SPA
 - [Easy Node Authentication: Setup and Local](http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local)
 - [Setting Up a MEAN Stack Single Page Application](http://scotch.io/bar-talk/setting-up-a-mean-stack-single-page-application)
   
@@ -26,13 +26,13 @@ Install PostgreSQL
 
 **Local**
 
-Setup PostreSQL
+Setup PostgreSQL
 - Follow instructions at http://postgresguide.com/setup/users.html
   - Add a user name "root" password "root"
-  - Create database named "synthergizedb"
+  - Create database named "learntogether"
   - Hook user up with database
-- OR just run this script `./scripts/dbconfig.sh`
 
+- If you have a pre-existing PostgreSQL database named "learntogether" run the tear down script first `./scripts/dbteardown.sh`, then run the build script: `./scripts/dbconfig.sh`
 
 Clone git repo, setup db, install node/bower packages
 ```
@@ -51,10 +51,9 @@ $ nodemon server.js
 ```
 
 
-
 Needs:
 =====
-* Sequelize controls schema: bad!
+* Sequelize controls schema: bad! **Fixed! 
 * Passport config is weird
 * Config in general is weird
 * Need config envs: dev, test, prod
